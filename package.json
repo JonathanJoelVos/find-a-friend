@@ -9,19 +9,35 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "@hookform/resolvers": "^3.3.1",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-scroll-area": "^1.0.5",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@tanstack/react-query": "^4.35.3",
+    "axios": "^1.5.1",
+    "class-variance-authority": "^0.7.0",
+    "clx": "^1.0.0",
+    "lucide-react": "^0.279.0",
+    "next": "^13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.2",
+    "tailwind-merge": "^1.14.0",
+    "zod": "^3.22.2",
+    "zustand": "^4.4.2"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
-    "@types/node": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "@types/node": "^20.7.0",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^13.5.3",
+    "postcss": "^8.4.30",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   }
 }
