@@ -11,7 +11,7 @@ export function SearchAndFilterSidebar() {
     <>
       <SearchAndFilterSidebarDrawer filters={filters} />
       <SearchAndFilterSidebarContent
-        className="lg:block hidden lg:w-2/4"
+        className="lg:block hidden md:w-2/4 lg:w-1/3"
         filters={filters}
       />
     </>

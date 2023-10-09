@@ -17,12 +17,16 @@ const config: Config = {
         app: {
           red: {
             100: '#FDECED',
+            200: '#FBE1E2',
             300: '#F75F64',
             500: '#F15156',
             700: '#E44449',
           },
           yellow: {
             500: '#F4D35E',
+          },
+          blue: {
+            700: '#0D3B66',
           },
         },
         primary: '#F15156',
