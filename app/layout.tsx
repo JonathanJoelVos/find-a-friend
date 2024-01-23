@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClient } from '@/lib/query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 const inter = Nunito({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <QueryClientProvider client={queryClient}>
           {children}
+          <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
       </body>
     </html>

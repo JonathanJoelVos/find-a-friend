@@ -1,6 +1,6 @@
 'use client'
 
-import { City } from '@/@types/service/pet-service'
+import { City } from '@/service/types/pet-service'
 import {
   Select,
   SelectContent,

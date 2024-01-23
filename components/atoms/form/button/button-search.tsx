@@ -9,10 +9,11 @@ export function ButtonSearch({ disabled }: ButtonSearchProps) {
   return (
     <Button
       type="submit"
-      className="bg-app-yellow-500 hover:bg-app-yellow-500/90 max-w-none"
+      size="icon"
+      className="bg-secondary hover:bg-secondary/90 max-w-none h-12 w-full lg:w-14"
       disabled={disabled}
     >
-      <SearchSlash className="h-4 w-4" />
+      <SearchSlash className="h-5 w-5" />
     </Button>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { State } from '@/@types/service/pet-service'
+import { State } from '@/service/types/pet-service'
 import {
   Select,
   SelectContent,
@@ -25,7 +25,7 @@ export function SelectStates({ states, ...rest }: SelectStatesProps) {
           <>
             {states.map((state) => (
               <SelectItem key={state.id} value={state.id}>
-                {formatState(state.name)}
+                {state.name}
               </SelectItem>
             ))}
           </>

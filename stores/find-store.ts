@@ -7,6 +7,7 @@ type State = {
   energy?: string
   size?: string
   levelOfDependence?: string
+  type?: string
 }
 
 type Actions = {
@@ -18,6 +19,7 @@ type Actions = {
   updateLevelOfDependence: (
     levelOfDependence: State['levelOfDependence'],
   ) => void
+  updateType: (type: State['type']) => void
 }
 
 export const useFindPetStore = create<State & Actions>((set) => ({
@@ -27,10 +29,12 @@ export const useFindPetStore = create<State & Actions>((set) => ({
   energy: '',
   size: '',
   levelOfDependence: '',
+  type: '',
   updateCityId: (cityId) => set({ cityId }),
   updateStateId: (stateId) => set({ stateId }),
   updateAge: (age) => set({ age }),
   updateEnergy: (energy) => set({ energy }),
   updateSize: (size) => set({ size }),
   updateLevelOfDependence: (levelOfDependence) => set({ levelOfDependence }),
+  updateType: (type) => set({ type }),
 }))

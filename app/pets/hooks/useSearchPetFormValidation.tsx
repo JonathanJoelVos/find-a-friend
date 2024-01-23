@@ -13,7 +13,7 @@ export type SearchPetFormProps = z.infer<typeof schema>
 
 export function useSearchPetFormValidation() {
   const router = useRouter()
-  const { cityId, stateId, age, energy, levelOfDependence, size } =
+  const { cityId, stateId, age, energy, levelOfDependence, size, type } =
     useFindPetStore()
 
   const { control, handleSubmit } = useForm<SearchPetFormProps>({
@@ -33,6 +33,7 @@ export function useSearchPetFormValidation() {
     if (energy) queryParams.push(`energy=${energy}`)
     if (levelOfDependence)
       queryParams.push(`level_of_dependence=${levelOfDependence}`)
+    if (type) queryParams.push(`type=${type}`)
 
     if (queryParams.length > 0) {
       url += `?${queryParams.join('&')}`

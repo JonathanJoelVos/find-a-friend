@@ -1,5 +1,4 @@
-import { ListPets } from '@/components/molecules/list-pets'
-
+import { ListPets } from '@/components/templates/list-pets'
 import { SearchAndFilterSidebar } from '@/components/templates/search-and-filter-sidebar'
 
 export default function PetsByCityPage() {

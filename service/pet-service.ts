@@ -1,4 +1,4 @@
-import { City, Pet, State } from '@/@types/service/pet-service'
+import { City, Pet, State } from '@/service/types/pet-service'
 import api from './api'
 
 export class PetService {
@@ -27,5 +27,17 @@ export class PetService {
     const response = await api.get(url)
 
     return response.data.pets
+  }
+
+  static async getProfile(petId: string) {
+    const response = await api.get(`/pets/${petId}/show`)
+
+    return response.data.pet
+  }
+
+  static async getAdoptionRequirements(petId: string) {
+    const response = await api.get(`/pets/adoption-requirements/${petId}`)
+
+    return response.data.adoptionRequirements
   }
 }
